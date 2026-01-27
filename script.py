@@ -2,6 +2,7 @@ import pickle
 import pandas as pd
 from flask import Flask, render_template, request
 import numpy as np
+
 app = Flask(__name__)
 
 model = pickle.load(open('LinearRegressionModel.pkl','rb'))
